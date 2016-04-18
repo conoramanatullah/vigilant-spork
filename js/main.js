@@ -4,10 +4,10 @@ $(document).ready(function(){
 
   $("#openModal").click(function(){
     // Open the modal
-    if(!exited){
+
       dialog.showModal();
-      exited++;
-    }
+
+
 
   })
   $("#emailForm").submit(function(event){
@@ -37,10 +37,14 @@ $(document).mouseup(function (e)
 {
     var container = $("#dialog-primary");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-         && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        dialog.close();
+    try {
+      if(!container.is(e.target) // if the target of the click isn't the container...
+           && container.has(e.target).length === 0){
+             dialog.close();
+           }
+    }
+    catch(err){
+       console.log("Invalid Click Error Caught YAY");
     }
 });
 });
