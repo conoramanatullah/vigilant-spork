@@ -13,6 +13,7 @@ $(document).ready(function(){
   $("#emailForm").submit(function(event){
     //Log email to console
 
+    // check if empty
     var email = $("#email").val();
     console.log(email);
     // Change views
