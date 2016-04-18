@@ -1,0 +1,20 @@
+{
+  "name": "Internship",
+  "authors": [
+    "Conor <conor.amanatullah@colorado.edu>"
+  ],
+  "description": "to get a really fun internship",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
+  }
+}
